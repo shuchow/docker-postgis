@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 
-DATADIR="/var/lib/postgresql/10/main"
-ROOT_CONF="/etc/postgresql/10/main"
+DATADIR="/var/lib/postgresql/9.6/main"
+ROOT_CONF="/etc/postgresql/9.6/main"
 CONF="$ROOT_CONF/postgresql.conf"
 RECOVERY_CONF="$ROOT_CONF/recovery.conf"
-POSTGRES="/usr/lib/postgresql/10/bin/postgres"
-INITDB="/usr/lib/postgresql/10/bin/initdb"
-SQLDIR="/usr/share/postgresql/10/contrib/postgis-2.4/"
+POSTGRES="/usr/lib/postgresql/9.6/bin/postgres"
+INITDB="/usr/lib/postgresql/9.6/bin/initdb"
+SQLDIR="/usr/share/postgresql/9.6/contrib/postgis-2.3/"
 SETVARS="POSTGIS_ENABLE_OUTDB_RASTERS=1 POSTGIS_GDAL_ENABLED_DRIVERS=ENABLE_ALL"
 LOCALONLY="-c listen_addresses='127.0.0.1'"
 PG_BASEBACKUP="/usr/bin/pg_basebackup"

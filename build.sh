@@ -1,2 +1,2 @@
-docker build -t kartoza/postgis:manual-build .
-docker build -t kartoza/postgis:10.0-2.4 .
+docker build -t shuchow/arm-postgis:manual-build .
+docker build -t shuchow/arm-postgis:9.6-2.4 .
